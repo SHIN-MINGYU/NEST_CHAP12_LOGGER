@@ -15,4 +15,5 @@ FROM node:16-alpine
 WORKDIR /app
 ENV NODE_ENV dev
 COPY --from=builder /app ./
+EXPOSE 3000
 CMD ["npm","run","start:dev"]
